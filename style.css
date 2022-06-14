@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    font-size: 25px;
+    background-color: rgb(180, 255, 161);
+    grid-row: 1 / 4;
+    padding-left: 20px;
+}
+
+.nav-title {
+    padding-top: 20px;
+    font-size: 30px;
+    padding-bottom: 35px;
+}
+
+.kangaroo-image {
+    height:38px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav ul {
+    display: grid;
+    row-gap: 15px;
+    grid-template-rows: repeat(5, 1fr) 2fr;
+}
+
+.link-images {
+    padding-right: 10px;
+    vertical-align: -3.5px;
+}
+
+.menu{
+    background-color: rgb(255, 203, 107);
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.top {
+    grid-row: 1fr;
+}
+
+.bottom {
+
+}
+
+.article{
+    background-color: rgb(214, 163, 255);
+    grid-column: 2;
+}
