@@ -129,15 +129,20 @@ ul {
     background-color: rgb(64, 147, 255);
 }
 
-.article{
+.article {
     padding: 60px 40px;
     background-color: rgb(214, 163, 255);
-    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-cards{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
 }
+
 
 .cards {
     height: auto;
@@ -146,25 +151,26 @@ ul {
 }
 
 .article-sidebar {
-    grid-column: 3;
-    grid-row: 1/4;
+    padding-left: 15px ;
 }
 
 .announcements {
     height: 50%;
     border: 1px solid yellow;
-
 }
 
-.announcement-card {
+.announcement-cards {
+    height: 100%;
     background-color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
 .trending {
     height: 50%;
-    border: 1px solid red;
+
 }
 
-.trending-card {
-    background-color: white;
+.trending-cards {
+    border: 1px solid red;
 }
