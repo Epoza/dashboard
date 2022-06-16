@@ -4,6 +4,8 @@
     font-family: 'Varela Round', sans-serif;
     margin: 0;
     padding: 0;
+    --img-height-large: 40px;
+    --img-height-small: 30px;
 }
 
 
@@ -66,6 +68,11 @@ ul {
 
 .notifications, .search {
     justify-self: end;
+    height: 30px;
+}
+
+.search {
+    padding-right: 15px;
 }
 
 .profile-picture-top-right {
@@ -98,11 +105,22 @@ ul {
 
 .profile-picture-bottom-left{
     justify-self: end;
-    font-size: 40px;
+    
     grid-row: 1/3;
 }
 
+.large-img-size {
+    height: var(--img-height-large);
+    border-radius: 50px;
+}
+
+.small-img-size {
+    height: var(--img-height-small);
+    border-radius: 50px;
+}
+
 .profile-name {
+    height: auto;
     grid-column-start: 2;
     grid-row-start: 2;
 }
@@ -155,17 +173,18 @@ ul {
 }
 
 .announcements, .trending {
-    height: 300px;
+    height: 47.5%;
     border-radius: 9px;
     background-color: white;
    
-    
+    overflow: hidden;
 }
 
 .announcement-cards {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     padding: 20px 50px;
+    overflow: hidden;
 }
 
 .announcement-cards, .trending-cards {
@@ -184,8 +203,10 @@ ul {
 .trending-header, .announcement-header {
     padding-bottom: 10px;
 }
-
-.trending-cards {
+.trending-picture-align {
+    align-self: center;
+}
+.trending-card {
     display: flex;
     flex-direction: column;
     align-items: center;
